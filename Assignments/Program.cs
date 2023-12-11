@@ -9,7 +9,7 @@ GetAllUsers(client);
 GetSingleUser(client);
 CreateUsers(client);
 UpdateAllUsers(client);
-DeleteAllUsers(client);
+DeleteAllUsers(client); 
 
 static void GetAllUsers(RestClient client)
 {
