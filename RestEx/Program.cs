@@ -1,8 +1,13 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using RestEx;
 using RestSharp;
 
-string baseUrl = "https://reqres.in/api/";
-var client = new RestClient(baseUrl);
+/*string baseUrl = "https://reqres.in/api/";
+var client = new RestClient(baseUrl);*/
+
+APIwithEX api = new APIwithEX();
+api.GetSingleUser();
 
 /*var getUserRequest = new RestRequest("users/2", Method.Get);
 var getUserResponse = client.Execute(getUserRequest);
@@ -125,7 +130,7 @@ var deleteUserResponse = client.Execute(deleteUserRequest);
 Console.WriteLine("DELETE User Response");
 Console.WriteLine(deleteUserResponse.Content);*/
 
-
+/*
 GetAllUsers(client);
 GetSingleUser(client);
 CreateUsers(client);
@@ -201,4 +206,31 @@ static void DeleteAllUsers(RestClient client)
     var deleteUserResponse = client.Execute(deleteUserRequest);
     Console.WriteLine("DELETE User Response");
     Console.WriteLine(deleteUserResponse.Content);
-}
+}*/
+
+/*GetSingleUser(client);
+
+static void GetSingleUser(RestClient client)
+{
+    var getUserRequest = new RestRequest("users/7", Method.Get);
+    var getUserResponse = client.Execute(getUserRequest);
+
+    if (getUserResponse.StatusCode == System.Net.HttpStatusCode.OK)
+    {
+        //Deserialize JSON response content into C# object
+        var response = JsonConvert.DeserializeObject<UserDataResponse>
+            (getUserResponse.Content);
+
+        UserData? user = response?.Data;
+
+        //Access properties of the deserialized object
+        Console.WriteLine($"User ID: {user?.Id}");
+        Console.WriteLine($"User Email: {user?.Email}");
+        Console.WriteLine($"User Name: {user?.FirstName} {user?.LastName}");
+        Console.WriteLine($"User Avatar: {user?.Avatar}");
+    }
+    else
+    {
+        Console.WriteLine($"Error: {getUserResponse.ErrorMessage}");
+    }
+}*/
