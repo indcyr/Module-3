@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestExNUnit", "RestExNUnit\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentNUnit", "AssignmentNUnit\AssignmentNUnit.csproj", "{DDB6E45B-A1D6-494C-AEA6-F34CD03FE4A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy", "CaseStudy\CaseStudy.csproj", "{8EF35D2A-CE3E-4826-BC68-EE2E1B3421A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DDB6E45B-A1D6-494C-AEA6-F34CD03FE4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDB6E45B-A1D6-494C-AEA6-F34CD03FE4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDB6E45B-A1D6-494C-AEA6-F34CD03FE4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF35D2A-CE3E-4826-BC68-EE2E1B3421A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF35D2A-CE3E-4826-BC68-EE2E1B3421A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF35D2A-CE3E-4826-BC68-EE2E1B3421A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF35D2A-CE3E-4826-BC68-EE2E1B3421A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
